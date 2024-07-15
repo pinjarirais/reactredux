@@ -5,10 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux"
 import store from './states/store';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 import ErrorPage from './components/ErrorPage';
 import Incdec from './components/Incdec';
 import Home from './components/Home';

@@ -7,8 +7,13 @@ export const incdecSlice = createSlice({
         Inc: (state, action) =>{
             return state += action.payload;
         },
-        Dec: (state, action) =>{
-            return state -= action.payload;
+        Dec: (state, action) =>{  
+            if(state === 0){
+                return state = 0;
+            }
+            return state -= action.payload;                
+              
+                  
         }
     }
 });

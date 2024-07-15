@@ -11,8 +11,8 @@ const Incdec = () => {
       <div className="container">
         <h1>{curstate}</h1>
         <div>
-          <button onClick={()=>{dispatch(Inc(5))}}>INC</button>
-          <button onClick={()=>{dispatch(Dec(5))}}>DEC</button>
+          <button onClick={()=>{dispatch(Inc(1))}}>INC</button>
+          <button onClick={()=>{dispatch(Dec(1))}}>DEC</button>
         </div>
       </div>
     </>

@@ -3,11 +3,46 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Provider} from "react-redux"
+import store from './states/store';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import ErrorPage from './components/ErrorPage';
+import Incdec from './components/Incdec';
+import Home from './components/Home';
+import Callapi from './components/Callapi';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/callapi",
+        element: <Callapi />,
+      },
+      {
+        path: "/incdec",
+        element: <Incdec />,
+      },
+    ],
+  },
+]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 

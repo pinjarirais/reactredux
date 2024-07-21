@@ -9,7 +9,8 @@ import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 import ErrorPage from './components/ErrorPage';
 import Incdec from './components/Incdec';
 import Home from './components/Home';
-import Callapi from './components/Callapi';
+import Getapi from './components/Getapi';
+import Postapi from './components/Postapi';
 
 const router = createBrowserRouter([
   {
@@ -22,12 +23,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/callapi",
-        element: <Callapi />,
+        path: "/getapi",
+        element: <Getapi />,
       },
       {
         path: "/incdec",
         element: <Incdec />,
+      },
+      {
+        path: "/postapi",
+        element: <Postapi />,
       },
     ],
   },

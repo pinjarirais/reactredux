@@ -11,6 +11,8 @@ import Incdec from './components/Incdec';
 import Home from './components/Home';
 import Getapi from './components/Getapi';
 import Postapi from './components/Postapi';
+import DeleteApi from './components/Deleteapi';
+import PutApi from './components/Putapi';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: "/postapi",
         element: <Postapi />,
+      },
+      {
+        path: "/deleteapi",
+        element: <DeleteApi />,
+      },
+      {
+        path: "/putapi",
+        element: <PutApi />,
       },
     ],
   },

@@ -13,6 +13,9 @@ import Getapi from './components/Getapi';
 import Postapi from './components/Postapi';
 import DeleteApi from './components/Deleteapi';
 import PutApi from './components/Putapi';
+import MemoValue from './components/MemoValue';
+import LiftingUp from './components/LiftingUp';
+import Hoc from './components/Hoc';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +46,18 @@ const router = createBrowserRouter([
       {
         path: "/putapi",
         element: <PutApi />,
+      },
+      {
+        path: "/memoValue",
+        element: <MemoValue />,
+      },
+      {
+        path: "/liftingup",
+        element: <LiftingUp />,
+      },
+      {
+        path: "/hoc",
+        element: <Hoc />,
       },
     ],
   },

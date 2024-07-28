@@ -1,2 +1,5 @@
 .container{display: flex; flex-direction: column; max-width: 600px; width: 100%; justify-content: center; border: 1px solid #ccc; align-items: center; margin: 0 auto; padding: 20px;}
 button{border: 0; background-color: cadetblue; padding: 8px 25px; border-radius: 10px; margin-left: 10px; color: #fff; cursor: pointer;}
+
+.user{ background-color: aquamarine; border-radius:4px; padding: 4px 15px; display: flex; justify-content: space-between}
+.removeuser{cursor: pointer;}

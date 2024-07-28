@@ -16,6 +16,8 @@ import PutApi from './components/Putapi';
 import MemoValue from './components/MemoValue';
 import LiftingUp from './components/LiftingUp';
 import Hoc from './components/Hoc';
+import UserForm from './components/UserForm';
+import UserFormData from './components/UserFormData';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +60,14 @@ const router = createBrowserRouter([
       {
         path: "/hoc",
         element: <Hoc />,
+      },
+      {
+        path: "/userform",
+        element: <UserForm />,
+      },
+      {
+        path: "/userformdata",
+        element: <UserFormData />,
       },
     ],
   },

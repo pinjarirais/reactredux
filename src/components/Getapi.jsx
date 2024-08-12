@@ -15,10 +15,10 @@ const Getapi = () => {
       let data = await res.json();
       setUserData(data)
       setIsLoader(false)
-      console.log(userdata)
+      //console.log(userdata)
     }
     getdata()
-  },[]);
+  }, [ ]);
   
   return (
     <>

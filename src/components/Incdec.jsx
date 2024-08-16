@@ -8,7 +8,7 @@ const Incdec = () => {
     const dispatch = useDispatch();
   return (
     <>
-      <div className="container">
+      <div className="container mt-20">
         <h1>{curstate}</h1>
         <div>
           <button onClick={()=>{dispatch(Inc(1))}}>INC</button>

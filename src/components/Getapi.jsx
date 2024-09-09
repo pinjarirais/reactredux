@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 const Getapi = () => {
   const [userdata, setUserData] = useState([]);
-  const [isloader, setIsLoader] = useState(false);
-
-
-  
+  const [isloader, setIsLoader] = useState(false);  
   
 
   useEffect(()=>{

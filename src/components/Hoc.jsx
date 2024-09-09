@@ -12,12 +12,9 @@ const Hoc = () => {
 export default Hoc;
 
 
-export function Outer(props){
-    
+export function Outer(props){    
 
-    return (
-
-        
+    return (       
         
         <h1 style={{backgroundColor: "red"}}>{<props.mainfunc />}</h1>
 

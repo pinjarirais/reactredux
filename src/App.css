@@ -9,3 +9,5 @@ button{border: 0; background-color: cadetblue; padding: 8px 25px; border-radius:
 .navlinks{display: flex; list-style: none; padding: 0; justify-content: space-around; text-decoration: none; background-color: #ddd; padding: 10px; margin: 0; font-size: 14px; font-weight: 500; border-bottom: 1px solid #999;}
 .navlinks a{text-decoration: none; color: black;}
 .navlinks a.active{color: red; font-weight: bold;}
+
+.timebox{display: flex; width: 300px; height: 300px; border: 1px solid red; justify-content: center; align-items: center;}

@@ -18,6 +18,8 @@ import LiftingUp from './components/LiftingUp';
 import Hoc from './components/Hoc';
 import UserForm from './components/UserForm';
 import UserFormData from './components/UserFormData';
+import Demo from './components/Demo';
+import Timer from './components/Timer';
 
 // const router = createBrowserRouter([
 //   {
@@ -87,6 +89,8 @@ const router = createBrowserRouter(
       <Route path='hoc' element={<Hoc />}/>
       <Route path='userform' element={<UserForm />}/>
       <Route path='userformdata' element={<UserFormData />}/>
+      <Route path='demo' element={<Demo />}/>
+      <Route path='timer' element={<Timer />}/>
     </Route>
   )
 );

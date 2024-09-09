@@ -1,36 +1,35 @@
+import { useEffect, useRef, useState } from "react";
 
 
 
 
 const Timer = () => {
-    // const [timebox, setTimeBox] = useState(0);
-    
-       
-    //     const timeid = setInterval(() => {
-    //         setTimeBox(timebox + 1)
-    //     }, 1000);   
+  const [sec , setSec ] = useState(0)
+  const timer = useRef()
 
+  function start(){
+  timer.current = setInterval( () => {
+      setSec( sec => sec + 1)
+  },1000)   
+  }
 
-    //      const cleartime = ()=> {
-    //         clearInterval(timeid)
-    //         setTimeBox(0)
-    //      }
+  function Stop(){
+    setSec(0)
+  }
 
-
-
-    // useEffect(()=>{
-        
-    // }, [])
+  useEffect(() => {
+    if (sec <= 0) {
+      clearInterval(timer.current);
+    }
+  }, [sec])
     
 
   return (
     <div>
       
-        {/* <div className="timebox"  onMouseLeave={cleartime}>
-            <h1> Timer: {timebox} </h1>
-        </div> */}
-
-        <h1>Rais Pinjari</h1>
+        <div className="timebox" onMouseEnter={()=>{start()}} onMouseLeave={()=>{Stop()}}>
+            <h1> Count : {sec} </h1>
+        </div>        
 
     </div>
   )

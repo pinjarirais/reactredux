@@ -20,6 +20,7 @@ import UserForm from './components/UserForm';
 import UserFormData from './components/UserFormData';
 import Demo from './components/Demo';
 import Timer from './components/Timer';
+import Count from './components/Count';
 
 // const router = createBrowserRouter([
 //   {
@@ -91,6 +92,7 @@ const router = createBrowserRouter(
       <Route path='userformdata' element={<UserFormData />}/>
       <Route path='demo' element={<Demo />}/>
       <Route path='timer' element={<Timer />}/>
+      <Route path='count' element={<Count />}/>
     </Route>
   )
 );
